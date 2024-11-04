@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="music.js"></script>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 0;
+        }
+
+        header, h1, h2, h3,h4, label,h5 {
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        
+        #previous-note {
+            color: #d1bc00;
+        }
+
+        /* #displayEquation, #displayUserInput, * {
+            user-select: none;
+        } */
+    </style>
+</head>
+<body>
+    <h3>Arrow key up: Current note is HIGHER than previous (yellow!)</h3>
+    <h3>Arrow key down: Current note is LOWER than previous (yellow!)</h3>
+    <h1 id="correct-or-incorrect"></h1>
+    <h1 id="current-note"></h1>
+    <h2 id="previous-note"></h2>
+
+    
+    <div></div>
+</body>
+</html>
+
+<!-- 
+const previousNoteElem = document.getElementById('displayEquation');
+const currentNoteElem = document.getElementById('displayEquation');
+const correctOrIncorrectElem = document.getElementById('correctOrIncorrect');
+const submitElem = document.getElementById('submit'); -->

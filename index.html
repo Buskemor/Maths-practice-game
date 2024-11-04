@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Math game</title>
+    <title>Document</title>
+    <script src="indexscript.js"></script>
     <style>
         body {
             background-color: black;
@@ -10,37 +11,18 @@
             justify-content: center;
             align-items: center;
             height: 80vh;
-            margin: 0;
+            margin: 0px;
         }
 
-        header, h1, h2, h4, label {
-            color: white;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        /* label {
-            color: white;
-            
-        } */
-        
-        #displayEquation, #displayUserInput, * {
-            user-select: none;
+        button {
+            margin: 1vh;
+            width: 15vh;
+            height: 5vh;
         }
     </style>
-    <!-- <audio id="incorrectSound" src="kenneth2.mp3"></audio> -->
 </head>
 <body>
-    <h1 id="displayEquation">5+5 </h1>
-    <h1 id="correctOrIncorrect">press enter..</h1><br>
-    <input id="numberInput"><br>
-    <script defer src="script.js"></script>
-    <div>
-        <h1 id="previousEquation">good luck..</h1><br><br><br><br><br><br><br>
-        
-    </div>
-    <div>
-        <input type="checkbox" id="checkBox" value="enabled" checked>
-        <label for="checkBox">Use learning algorythm</label>
-    </div>
+    <button onclick="openMathsGame()">Practice maths</button>
+    <button onclick="openMusicGame()">Practice musical notes</button>
 </body>
 </html>
